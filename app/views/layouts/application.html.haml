@@ -1,0 +1,35 @@
+!!! 5
+%html{html_attrs}
+  %head
+    %title= @title
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="tue">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  	
+    = stylesheet_link_tag('stylesheet.css')
+    
+    = javascript_include_tag('modernizr.foundation.js')
+    = javascript_include_tag('jquery.min.js')
+    = javascript_include_tag('jquery.reveal.js')
+    = javascript_include_tag('jquery.orbit-1.4.0.js')
+    = javascript_include_tag('jquery.customforms.js')
+    = javascript_include_tag('jquery.placeholder.min.js')
+    = javascript_include_tag('jquery.tooltips.js')
+    = javascript_include_tag('app.js')
+
+  %body
+
+    #myModal.reveal-modal
+      %h2
+        Awesome. I have it.
+      %p.lead
+        Your couch. It is mine.
+      %p
+        Im a cool paragraph that lives inside of an even cooler modal. Wins.
+      %a.close-reveal-modal
+        Close!
+
+    .container
+      = yield

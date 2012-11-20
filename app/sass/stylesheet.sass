@@ -1,0 +1,94 @@
+@import base
+
+*
+  +box-sizing(border-box)
+
+html
+  overflow-x: hidden
+
+body
+  @extend .font-neuzeit
+  +font-smoothing
+  //background-color: black
+
+  // Animation Fade-in intro
+  //+animation(intro 2s ease-in-out)
+  //+animation-iteration-count(1)
+
+h1
+  @extend .font-neuzeit-bold
+
+ul
+  list-style: none
+  margin: 0
+  padding: 0
+  li
+    line-height: 1.5
+      
+// Container
+.container
+  overflow: hidden
+  padding: 0
+  margin: 0 auto
+  ul
+    margin: 1.5em 0 0 1.5em
+    li
+      padding: 0 1.5em 1.5em 0
+      margin: 0
+      > div
+        background: #fff
+        padding: 3em
+        height: 180px
+        text-align: center
+        +border-radius(5px)
+        +box-shadow(0px 1px 5px 0px rgba(0, 0, 0, 0.4))
+      a
+        color: #ccc
+
+
+.grid li.tall
+  > div
+    height: 380px  
+   
+@media all and (min-width: 25em)
+  .grid li
+    width: 50%
+    float: left
+    &.wide
+      width: 100%
+
+@media all and (min-width: 40em)
+  .grid li
+    width: 33.3333333%
+    &.wide
+      width: 66.6666666%
+      
+@media all and (min-width: 55em)
+  .grid li
+    width: 25%
+    &.wide
+      width: 50%
+
+@media all and (min-width: 70em)
+  .grid li
+    width: 20%
+    &.wide
+      width: 40%
+
+@media all and (min-width: 85em)
+  .grid li
+    width: 16.6666666%
+    &.wide
+      width: 33.3333333%
+
+@media all and (min-width: 100em)
+  .grid li
+    width: 12.5%
+    &.wide
+      width: 25%
+
+@media all and (min-width: 115em)
+  .grid li
+    width: 10%
+    &.wide
+      width: 20%
