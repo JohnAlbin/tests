@@ -1,57 +1,410 @@
-@media all and (min-width: 25em) {
-  .grid li {
-    width: 50%;
-    float: left;
-  }
-  .grid li.wide {
-    width: 100%;
-  }
-}
-@media all and (min-width: 40em) {
-  .grid li {
-    width: 33.33333%;
-  }
-  .grid li.wide {
-    width: 66.66667%;
+$zen-gutter-width:  1.5em;
+// You can generate more efficient CSS if you manually apply the
+// zen-grid-item-base mixin to all grid items from within a single ruleset.
+$zen-auto-include-item-base: false;
+
+
+@mixin tall () {
+  .grid & > div {
+   height: 380px;
   }
 }
-@media all and (min-width: 55em) {
-  .grid li {
-    width: 25%;
+
+.grid {
+  @include zen-grid-container();
+}
+
+.grid li {
+  @include zen-grid-item-base();
+  padding-bottom: 1.5em;
+}
+
+$zen-column-count: 2;
+@media all and (min-width: 25em) and (max-width: 40em) {
+  .item1 {
+    @include zen-grid-item(1, 1, right);
+    @include tall();
   }
-  .grid li.wide {
-    width: 50%;
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-clear(); // Start a new row.
+    @include zen-grid-item(1, 1);
+  }
+  .item4 {
+    @include zen-clear(both); // Clear the tall, floated-right item while starting a new row.
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item5 {
+    @include zen-grid-item(1, 1);
+  }
+  .item6 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item7 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item8 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item9 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 2);
+  }
+  .item10 {
+    @include zen-clear(both);
+    @include zen-grid-item(2, 1);
+  }
+  .item11 {
+    @include zen-clear();
+    @include zen-grid-item(2, 1);
+    @include tall();
+  }
+  .item12 {
+    @include zen-clear();
+    @include zen-grid-item(2, 1);
+  }
+  .item13 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+  }
+  .item14 {
+    @include zen-grid-item(1, 2);
+  }
+  .item15 {
+    @include zen-clear();
+    @include zen-grid-item(1, 2);
+  }
+  .item16 {
+    @include zen-grid-item(1, 1);
   }
 }
-@media all and (min-width: 70em) {
-  .grid li {
-    width: 20%;
+
+$zen-column-count: 3;
+@media all and (min-width: 40em) and (max-width: 55em) {
+  .item1 {
+    @include zen-grid-item(2, 1, right);
+    @include tall();
   }
-  .grid li.wide {
-    width: 40%;
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-clear(); // Start a new row.
+    @include zen-grid-item(1, 1);
+  }
+  .item4 {
+    @include zen-clear(both); // Clear the tall, floated-right item while starting a new row.
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item5 {
+    @include zen-grid-item(2, 1);
+  }
+  .item6 {
+    @include zen-clear();
+    @include zen-grid-item(2, 1);
+    @include tall();
+  }
+  .item7 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item8 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item9 {
+    @include zen-grid-item(1, 2);
+  }
+  .item10 {
+    @include zen-clear(right);
+    @include zen-grid-item(2, 2);
+  }
+  .item11 {
+    @include zen-clear();
+    @include zen-grid-item(3, 1);
+  }
+  .item12 {
+    @include zen-clear();
+    @include zen-grid-item(1, 2, right);
+    @include tall();
+  }
+  .item13 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+  }
+  .item14 {
+    @include zen-grid-item(1, 3);
+  }
+  .item15 {
+    @include zen-clear();
+    @include zen-grid-item(1, 3);
+  }
+  .item16 {
+    @include zen-grid-item(1, 1);
   }
 }
-@media all and (min-width: 85em) {
-  .grid li {
-    width: 16.66667%;
+
+$zen-column-count: 4;
+@media all and (min-width: 55em) and (max-width: 70em) {
+  .item1 {
+    @include zen-grid-item(2, 2, right);
+    @include tall();
   }
-  .grid li.wide {
-    width: 33.33333%;
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-grid-item(1, 4);
+  }
+  .item4 {
+    @include zen-clear();
+    @include zen-grid-item(1, 4);
+    @include tall();
+  }
+  .item5 {
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item6 {
+    @include zen-clear(right);
+    @include zen-grid-item(2, 2, right);
+    @include tall();
+  }
+  .item7 {
+    @include zen-clear();
+    @include zen-grid-item(1, 4);
+    @include tall();
+  }
+  .item8 {
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item9 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 2);
+  }
+  .item10 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 2, right);
+    @include tall();
+  }
+  .item11 {
+    @include zen-clear();
+    @include zen-grid-item(2, 1);
+  }
+  .item12 {
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item13 {
+    @include zen-clear();
+    @include zen-grid-item(3, 1);
+  }
+  .item14 {
+    @include zen-clear(both);
+    @include zen-grid-item(2, 2);
+  }
+  .item15 {
+    @include zen-grid-item(1, 1);
+  }
+  .item16 {
+    @include zen-grid-item(1, 4);
   }
 }
-@media all and (min-width: 100em) {
-  .grid li {
-    width: 12.5%;
+
+$zen-column-count: 5;
+@media all and (min-width: 70em) and (max-width: 85em) {
+  .item1 {
+    @include zen-grid-item(2, 3, right);
+    @include tall();
   }
-  .grid li.wide {
-    width: 25%;
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-grid-item(1, 4);
+  }
+  .item4 {
+    @include zen-grid-item(1, 5);
+  }
+  .item5 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+    @include tall();
+  }
+  .item6 {
+    @include zen-grid-item(1, 2, right);
+  }
+  .item7 {
+    @include zen-grid-item(1, 1, right);
+  }
+  .item8 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 2);
+  }
+  .item9 {
+    @include zen-grid-item(1, 3);
+  }
+  .item10 {
+    @include zen-grid-item(1, 4);
+  }
+  .item11 {
+    @include zen-grid-item(1, 5);
+  }
+  .item12 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+  }
+  .item13 {
+    @include zen-grid-item(1, 2);
+  }
+  .item14 {
+    @include zen-grid-item(1, 3);
+  }
+  .item15 {
+    @include zen-grid-item(1, 4);
+  }
+  .item16 {
+    @include zen-grid-item(1, 5);
   }
 }
+
+$zen-column-count: 6;
+@media all and (min-width: 85em) and (max-width: 100em) {
+  .item1 {
+    @include zen-grid-item(2, 4, right);
+    @include tall();
+  }
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-grid-item(1, 4);
+  }
+  .item4 {
+    @include zen-grid-item(1, 5);
+  }
+  .item5 {
+    @include zen-grid-item(1, 1, right);
+    @include tall();
+  }
+  .item6 {
+    @include zen-clear();
+    @include zen-grid-item(1, 3, right);
+  }
+  .item7 {
+    @include zen-grid-item(1, 2, right);
+  }
+  .item8 {
+    @include zen-clear();
+    @include zen-grid-item(1, 1);
+    @include tall()
+  }
+  .item9 {
+    @include zen-clear(right);
+    @include zen-grid-item(2, 3, right);
+    @include tall()
+  }
+  .item10 {
+    @include zen-grid-item(1, 2);
+  }
+  .item11 {
+    @include zen-grid-item(2, 5);
+  }
+  .item12 {
+    @include zen-clear();
+    @include zen-grid-item(2, 1);
+  }
+  .item13 {
+    @include zen-grid-item(2, 5);
+  }
+  .item14 {
+    @include zen-clear(both);
+    @include zen-grid-item(2, 1);
+  }
+  .item15 {
+    @include zen-grid-item(2, 3);
+  }
+  .item16 {
+    @include zen-grid-item(2, 5);
+  }
+}
+
+$zen-column-count: 8;
+@media all and (min-width: 100em) and (max-width: 115em) {
+  .item1 {
+    @include zen-grid-item(2, 6, right);
+    @include tall();
+  }
+  .item2 {
+    @include zen-grid-item(1, 1);
+  }
+  .item3 {
+    @include zen-grid-item(1, 4);
+  }
+  .item4 {
+    @include zen-grid-item(1, 5);
+  }
+  .item5 {
+    @include zen-grid-item(2, 2, right);
+    @include tall();
+  }
+  .item6 {
+    @include zen-grid-item(1, 8);
+  }
+  .item7 {
+    @include zen-clear();
+    @include zen-grid-item(2, 4);
+    @include tall();
+  }
+  .item8 {
+    @include zen-grid-item(1, 1);
+    @include tall()
+  }
+  .item9 {
+    @include zen-grid-item(1, 8);
+    @include tall()
+  }
+  .item10 {
+    @include zen-clear(right);
+    @include zen-grid-item(1, 2);
+  }
+  .item11 {
+    @include zen-grid-item(1, 6, right);
+    @include tall();
+  }
+  .item12 {
+    @include zen-grid-item(2, 6);
+  }
+  .item13 {
+    @include zen-clear();
+    @include zen-grid-item(2, 5);
+  }
+  .item14 {
+    @include zen-grid-item(2, 1);
+  }
+  .item15 {
+    @include zen-grid-item(1, 4);
+  }
+  .item16 {
+    @include zen-grid-item(2, 7);
+  }
+}
+
+$zen-column-count: 10;
 @media all and (min-width: 115em) {
-  .grid li {
-    width: 10%;
-  }
-  .grid li.wide {
-    width: 20%;
-  }
+  // My screen's not big enough to test this size!
+  // Left as an excercise for the reader.
 }

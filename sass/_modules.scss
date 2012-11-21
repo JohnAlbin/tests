@@ -112,13 +112,9 @@ div.scrollableArea {
   margin: 0 auto;
 }
 .container ul {
-  margin: 1.5em 0 0 1.5em;
+  margin: 1.5em 0 1.5em 0;
 }
-.container ul li {
-  padding: 0 1.5em 1.5em 0;
-  margin: 0;
-}
-.container ul li > div {
+.grid li > div {
   background: white;
   padding: 3em;
   height: 180px;
