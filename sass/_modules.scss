@@ -1,0 +1,141 @@
+.ir, .image-replacement {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visuallyhidden, .visually-hidden, .vh {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .focusable.visually-hidden:active, .focusable.vh:active, .visuallyhidden.focusable:focus, .focusable.visually-hidden:focus, .focusable.vh:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+div.scrollingHotSpotLeft {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(/scroller/images/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  cursor: url(/scroller/images/cursors/cursor_arrow_left.png), url(/scroller/images/cursors/cursor_arrow_left.cur), w-resize;
+}
+div.scrollingHotSpotLeftVisible {
+  background-image: url(/scroller/images/arrow_left.gif);
+  background-color: white;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  -moz-opacity: 0.35;
+  filter: alpha(opacity=35);
+  zoom: 1;
+}
+div.scrollingHotSpotRight {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(/scroller/images/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  cursor: url(/scroller/images/cursors/cursor_arrow_right.png), url(/scroller/images/cursors/cursor_arrow_right.cur), e-resize;
+}
+div.scrollingHotSpotRightVisible {
+  background-image: url(/scroller/images/arrow_right.gif);
+  background-color: white;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  -moz-opacity: 0.35;
+  zoom: 1;
+}
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+div.scrollableArea {
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+.container {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+.container ul {
+  margin: 1.5em 0 0 1.5em;
+}
+.container ul li {
+  padding: 0 1.5em 1.5em 0;
+  margin: 0;
+}
+.container ul li > div {
+  background: white;
+  padding: 3em;
+  height: 180px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.container ul li a {
+  color: #cccccc;
+}
+
+.grid li.tall > div {
+  height: 380px;
+}

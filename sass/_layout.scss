@@ -1,0 +1,57 @@
+@media all and (min-width: 25em) {
+  .grid li {
+    width: 50%;
+    float: left;
+  }
+  .grid li.wide {
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) {
+  .grid li {
+    width: 33.33333%;
+  }
+  .grid li.wide {
+    width: 66.66667%;
+  }
+}
+@media all and (min-width: 55em) {
+  .grid li {
+    width: 25%;
+  }
+  .grid li.wide {
+    width: 50%;
+  }
+}
+@media all and (min-width: 70em) {
+  .grid li {
+    width: 20%;
+  }
+  .grid li.wide {
+    width: 40%;
+  }
+}
+@media all and (min-width: 85em) {
+  .grid li {
+    width: 16.66667%;
+  }
+  .grid li.wide {
+    width: 33.33333%;
+  }
+}
+@media all and (min-width: 100em) {
+  .grid li {
+    width: 12.5%;
+  }
+  .grid li.wide {
+    width: 25%;
+  }
+}
+@media all and (min-width: 115em) {
+  .grid li {
+    width: 10%;
+  }
+  .grid li.wide {
+    width: 20%;
+  }
+}
