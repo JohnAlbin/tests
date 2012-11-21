@@ -4,6 +4,7 @@ gem 'serve'
 gem 'haml', '~> 3.2.0.rc.1'
 gem 'sass', '~> 3.2.0.alpha.247'
 gem 'compass'
+gem 'animation'
 gem 'zurb-foundation'
 
 # Use edge instead:

@@ -1,65 +1,451 @@
-/*
-Syntax error: File to import not found or unreadable: animation.
-              Load paths:
-                /WIP/lustconnect/app/sass
-                /Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets
-                /Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets
-                Compass::SpriteImporter
-        on line 11 of /WIP/lustconnect/app/sass/_base.sass
-        from line 1 of ./sass/stylesheet.sass
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
 
-Backtrace:
-/WIP/lustconnect/app/sass/_base.sass:11
-./sass/stylesheet.sass:1
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/import_node.rb:45:in `import'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/import_node.rb:28:in `imported_file'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/import_node.rb:37:in `css_import?'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:215:in `visit_import'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `block in visit_import'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `map'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:225:in `visit_import'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:107:in `block in visit_children'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:119:in `with_environment'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:106:in `visit_children'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:126:in `visit_root'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:98:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/tree/root_node.rb:20:in `render'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/engine.rb:315:in `_render'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/sass-3.2.3/lib/sass/engine.rb:262:in `render'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:140:in `block (2 levels) in compile'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:139:in `block in compile'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/logger.rb:45:in `red'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:138:in `compile'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:118:in `compile_if_required'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:103:in `block (2 levels) in run'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `each'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:101:in `block in run'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:126:in `timed'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/compiler.rb:100:in `run'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/update_project.rb:45:in `perform'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/base.rb:18:in `execute'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/commands/project_base.rb:19:in `execute'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/lib/compass/exec/sub_command_ui.rb:15:in `run!'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:30:in `block in <top (required)>'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `call'
-/Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass:44:in `<top (required)>'
-/Users/nacho/.rbenv/versions/1.9.3-p286/bin/compass:23:in `load'
-/Users/nacho/.rbenv/versions/1.9.3-p286/bin/compass:23:in `<main>'
-*/
-body:before {
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+.font-neuzeit, body {
+  font-family: "neuzeit-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.font-neuzeit-bold, h1 {
+  font-family: "neuzeit-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on November 2, 2012 */
+@font-face {
+  font-family: "neuzeit-black";
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-bla-webfont.eot");
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-bla-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bla-webfont.woff") format("woff"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bla-webfont.ttf") format("truetype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bla-webfont.svg#neuzeit_gro_t_ot_blackregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neuzeit-bold";
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-bol-webfont.eot");
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-bol-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bol-webfont.woff") format("woff"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bol-webfont.ttf") format("truetype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-bol-webfont.svg#neuzeit_gro_t_otbold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "neuzeit-regular";
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-reg-webfont.eot");
+  src: url("/fonts/neuzeit/urw_neuzeitgrotesktot-reg-webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-reg-webfont.woff") format("woff"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-reg-webfont.ttf") format("truetype"), url("/fonts/neuzeit/urw_neuzeitgrotesktot-reg-webfont.svg#neuzeit_gro_t_otregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+a {
+  color: green;
+  text-decoration: none;
+}
+a:hover {
+  color: #00b300;
+  text-decoration: underline;
+}
+a:focus, a:active {
+  outline: none;
+}
+
+a:hover, a:active {
+  outline: none;
+}
+
+ul, ol {
+  margin-left: 2em;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+nav ul, nav li {
+  margin: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+strong, th {
+  font-weight: bold;
+}
+
+td {
+  vertical-align: top;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+pre {
   white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: File to import not found or unreadable: animation.\A               Load paths:\A                 /WIP/lustconnect/app/sass\A                 /Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/blueprint/stylesheets\A                 /Users/nacho/.rbenv/versions/1.9.3-p286/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets\A                 Compass::SpriteImporter\A         on line 11 of /WIP/lustconnect/app/sass/_base.sass\A         from line 1 of ./sass/stylesheet.sass"; }
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  padding: 15px;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.ie6 legend, .ie7 legend {
+  margin-left: -7px;
+}
+
+input[type="radio"] {
+  vertical-align: text-bottom;
+}
+input[type="checkbox"] {
+  vertical-align: bottom;
+}
+
+.ie7 input[type="checkbox"] {
+  vertical-align: baseline;
+}
+
+.ie6 input {
+  vertical-align: text-bottom;
+}
+
+label {
+  cursor: pointer;
+}
+
+input[type="button"], input[type="submit"], input[type="image"] {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+  margin: 0;
+}
+
+input, select, textarea {
+  margin: 0;
+}
+
+input:invalid, textarea:invalid {
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: red 0px 0px 5px;
+  -moz-box-shadow: red 0px 0px 5px;
+  box-shadow: red 0px 0px 5px;
+}
+
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid {
+  background-color: #ffd6d6;
+}
+
+a:link {
+  -webkit-tap-highlight-color: #59bef2;
+}
+
+button {
+  width: auto;
+  overflow: visible;
+}
+
+.ie7 img {
+  -ms-interpolation-mode: bicubic;
+}
+
+body, select, input, textarea {
+  color: #171717;
+  font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+.ir, .image-replacement {
+  display: block;
+  text-indent: -999em;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  text-align: left;
+  direction: ltr;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.visuallyhidden, .visually-hidden, .vh {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visuallyhidden.focusable:active, .focusable.visually-hidden:active, .focusable.vh:active, .visuallyhidden.focusable:focus, .focusable.visually-hidden:focus, .focusable.vh:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix {
+  zoom: 1;
+}
+.clearfix:before {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.clearfix:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both;
+}
+
+div.scrollingHotSpotLeft {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(/scroller/images/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  left: 0;
+  cursor: url(/scroller/images/cursors/cursor_arrow_left.png), url(/scroller/images/cursors/cursor_arrow_left.cur), w-resize;
+}
+div.scrollingHotSpotLeftVisible {
+  background-image: url(/scroller/images/arrow_left.gif);
+  background-color: white;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  -moz-opacity: 0.35;
+  filter: alpha(opacity=35);
+  zoom: 1;
+}
+div.scrollingHotSpotRight {
+  min-width: 75px;
+  width: 10%;
+  height: 100%;
+  background-image: url(/scroller/images/big_transparent.gif);
+  background-repeat: repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: 200;
+  right: 0;
+  cursor: url(/scroller/images/cursors/cursor_arrow_right.png), url(/scroller/images/cursors/cursor_arrow_right.cur), e-resize;
+}
+div.scrollingHotSpotRightVisible {
+  background-image: url(/scroller/images/arrow_right.gif);
+  background-color: white;
+  background-repeat: no-repeat;
+  opacity: 0.35;
+  filter: alpha(opacity=35);
+  -moz-opacity: 0.35;
+  zoom: 1;
+}
+div.scrollWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+div.scrollableArea {
+  position: relative;
+  width: auto;
+  height: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  line-height: 1.5;
+}
+
+.container {
+  overflow: hidden;
+  padding: 0;
+  margin: 0 auto;
+}
+.container ul {
+  margin: 1.5em 0 0 1.5em;
+}
+.container ul li {
+  padding: 0 1.5em 1.5em 0;
+  margin: 0;
+}
+.container ul li > div {
+  background: white;
+  padding: 3em;
+  height: 180px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.4);
+}
+.container ul li a {
+  color: #cccccc;
+}
+
+.grid li.tall > div {
+  height: 380px;
+}
+
+@media all and (min-width: 25em) {
+  .grid li {
+    width: 50%;
+    float: left;
+  }
+  .grid li.wide {
+    width: 100%;
+  }
+}
+@media all and (min-width: 40em) {
+  .grid li {
+    width: 33.33333%;
+  }
+  .grid li.wide {
+    width: 66.66667%;
+  }
+}
+@media all and (min-width: 55em) {
+  .grid li {
+    width: 25%;
+  }
+  .grid li.wide {
+    width: 50%;
+  }
+}
+@media all and (min-width: 70em) {
+  .grid li {
+    width: 20%;
+  }
+  .grid li.wide {
+    width: 40%;
+  }
+}
+@media all and (min-width: 85em) {
+  .grid li {
+    width: 16.66667%;
+  }
+  .grid li.wide {
+    width: 33.33333%;
+  }
+}
+@media all and (min-width: 100em) {
+  .grid li {
+    width: 12.5%;
+  }
+  .grid li.wide {
+    width: 25%;
+  }
+}
+@media all and (min-width: 115em) {
+  .grid li {
+    width: 10%;
+  }
+  .grid li.wide {
+    width: 20%;
+  }
+}
